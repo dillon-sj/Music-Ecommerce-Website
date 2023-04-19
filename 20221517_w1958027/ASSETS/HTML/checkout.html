@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HH-checkout</title>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../CSS/checkout.css" />
+    <link rel="stylesheet" href="../CSS/Main_style.css" />
+    <link rel="icon" type="image/svg" href="../IMAGES/cd.svg" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="student3PageEditor.html">
+            <img src="../IMAGES/cd.svg" class="navlogo" />
+          </a>
+        </div>
+        <div class="navbar-iteams">
+          <a href="#Aboutus">About us</a>
+          <a href="#Sitemap">Sitemap</a>
+          <a href="Student3Quiz.html">Quiz</a>
+          <a href="shop.html" class="active">Shop</a>
+          <a href="#Comments">Comments</a>
+          <a href="#Home">Home</a>
+        </div>
+      </div>
+    </header>
+    <div class="check_content">
+      <div class="order_summary_div contain">
+        <div>
+          <p class="title">Order Summary</p>
+          <br />
+          <table>
+            <tr>
+              <th class="order_summary_attribute">Reference:</th>
+              <td id="reference_value">#20238027</td>
+            </tr>
+            <tr>
+              <th class="order_summary_attribute">Total:</th>
+              <td id="total_value"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="container">
+        <form id="main_form" action="">
+          <div class="row">
+            <div class="col">
+              <h3 class="title">User Details</h3>
+              <h6>
+                <span class="star" style="color: red" ;>*</span> means
+                compulsory
+              </h6>
+
+              <div class="inputBox">
+                <span>full name* :</span>
+                <input
+                  class="required"
+                  id="userName"
+                  type="text"
+                  placeholder="john deo"
+                />
+              </div>
+              <div class="inputBox">
+                <span>email* :</span>
+                <input
+                  class="required"
+                  id="userEmail"
+                  type="email"
+                  placeholder="example@example.com"
+                />
+              </div>
+              <div class="inputBox">
+                <span>Contact no.1* :</span>
+                <input
+                  class="required"
+                  id="Contact_no_1"
+                  type="tel"
+                  placeholder="074-111-1111"
+                />
+              </div>
+              <div class="inputBox">
+                <span>Contact no.2 :</span>
+                <input
+                  id="Contact_no_2"
+                  type="tel"
+                  placeholder="074-111-1111"
+                />
+              </div>
+            </div>
+
+            <div class="col">
+              <h3 class="title">payment</h3>
+              <h6><span style="color: red" ;>*</span> means compulsory</h6>
+
+              <div class="inputBox">
+                <span>cards accepted :</span>
+                <img src="../IMAGES/images/card_img.png" alt="" />
+              </div>
+              <div class="inputBox">
+                <span>name on card* :</span>
+                <input
+                  class="required"
+                  id="name-on-card"
+                  type="text"
+                  placeholder="mr. john deo"
+                />
+              </div>
+              <div class="inputBox">
+                <span>credit card number* :</span>
+                <input
+                  class="required"
+                  id="card_num"
+                  type="text"
+                  placeholder="1111-2222-3333-4444"
+                />
+              </div>
+              <div class="inputBox">
+                <span>exp month* :</span>
+                <!-- <input type="text" placeholder="january" /> -->
+                <div class="month_option">
+                  <select name="" id="">
+                    <option value="">Choose a month</option>
+                    <option value="">January</option>
+                    <option value="">February</option>
+                    <option value="">March</option>
+                    <option value="">April</option>
+                    <option value="">May</option>
+                    <option value="">June</option>
+                    <option value="">July</option>
+                    <option value="">August</option>
+                    <option value="">September</option>
+                    <option value="">October</option>
+                    <option value="">November</option>
+                    <option value="">December</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="inputBox">
+                  <span>exp year* :</span>
+
+                  <input class="required" type="text" placeholder="2022" />
+                </div>
+                <div class="inputBox">
+                  <span>CVV* :</span>
+                  <input
+                    id="cvv_num"
+                    class="required"
+                    type="text"
+                    placeholder="123"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="formpart2">
+            <h3>
+              Billing address<sup><span class="required">*</span></sup>
+              <span id="address_correct"></span>
+            </h3>
+            <div id="shipping_details_message">
+              <p id="billing_address">No shipping details found!</p>
+              <button id="edit_shipping_details" type="button" class="button">
+                Edit
+              </button>
+            </div>
+            <div id="change_visibility" class="notvisible">
+              <div id="edit_shipping_info">
+                <div>
+                  <label for="address_1">Address 1*<sup></sup></label>
+                  <input
+                    id="address_1"
+                    type="text"
+                    placeholder="115 New Cavendish Street"
+                    name="addres1"
+                  />
+                </div>
+                <div>
+                  <label for="state">State/Region</label>
+                  <input id="state" type="text" name="state" />
+                </div>
+                <div>
+                  <label for="address_2">Address 2</label>
+                  <input
+                    id="address_2"
+                    type="text"
+                    name="address_2"
+                    class="capitalize"
+                  />
+                </div>
+                <div>
+                  <label for="town"
+                    >Town/City<sup><span class="required">*</span></sup></label
+                  >
+                  <input
+                    id="town"
+                    type="text"
+                    placeholder="LONDON"
+                    name="town"
+                    class="uppercase"
+                  />
+                </div>
+                <div>
+                  <label for="address_3">Address 3</label>
+                  <input
+                    id="address_3"
+                    type="text"
+                    name="address_3"
+                    class="capitalize"
+                  />
+                </div>
+                <div>
+                  <label for="country"
+                    >Country<sup><span class="required">*</span></sup></label
+                  >
+                  <input
+                    type="text"
+                    name="country"
+                    id="country"
+                    placeholder="Country"
+                  />
+                </div>
+                <div>
+                  <label for="postalcode"
+                    >Zip code<sup><span class="required">*</span></sup></label
+                  >
+
+                  <input
+                    id="postalcode"
+                    type="text"
+                    placeholder="W1W 6UW"
+                    name="postalcode"
+                  />
+                </div>
+              </div>
+              <p id="error_message" class="required"></p>
+              <div>
+                <br />
+                <!-- <button type="button" class="button" id="cancel_btn">Cancel changes</button> -->
+                <button type="button" class="button" id="confirm_btn">
+                  Confirm
+                </button>
+              </div>
+            </div>
+
+            <br />
+          </div>
+          <p>
+            When you submit your transaction for processing by Sporty, you
+            confirm your acceptance of Harmony House's Privacy Policy. © 2023.
+            All rights reserved.
+          </p>
+          <input
+            id="submit_btn"
+            type="submit"
+            value="proceed to checkout"
+            class="submit-btn"
+          />
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-topic">
+            <h3>Thank you for visiting our page</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Comments</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Quiz</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </div>
+          <div class="footer-topic">
+            <h3>Follow Us</h3>
+            <div class="social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-topic">
+            <h3>Editor Information</h3>
+            <ul>
+              <li><a href="student1PageEditor.html">Page Editor</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../JS/checkout.js"></script>
+  </body>
+</html>

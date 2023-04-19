@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HH-shop</title>
+    <link rel="stylesheet" href="../CSS/shop.css" />
+    <link rel="stylesheet" href="../CSS/Main_style.css" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg" href="../IMAGES/cd.svg" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="student3PageEditor.html">
+            <img src="../IMAGES/cd.svg" class="navlogo" alt="logo" />
+          </a>
+        </div>
+        <div class="navbar-iteams">
+          <a href="#Aboutus">About us</a>
+          <a href="#Sitemap">Sitemap</a>
+          <a href="#Quiz">Quiz</a>
+          <a href="shop.html" class="active">Shop</a>
+          <a href="#Comments">Comments</a>
+          <a href="#Home">Home</a>
+        </div>
+      </div>
+
+      <!-- nav -->
+      <div class="nav_shop container">
+        <div>
+          <a href="#" class="shop_name">HARMONY HOUSE</a>
+        </div>
+
+        <!-- cart_icon -->
+
+        <div class="add_to_cart" id="cart-icon">
+          <a class="add_cart_text">Add to Cart</a>
+          <i class="bx bx-cart"></i>
+        </div>
+        <!-- CART -->
+        <div class="cart">
+          <h2 class="cart-title">YOUR CART</h2>
+          <!-- CART CONTENT -->
+          <div class="cart-content"></div>
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <br />
+          <div class="order_detail">
+            <h3>Order Details</h3>
+            <div class="form_field">
+              <label class="form_label" for="name">Name:</label>
+              <input
+                class="input"
+                type="text"
+                id="name-input"
+                name="name"
+                required
+                placeholder="Your name"
+              />
+            </div>
+
+            <div class="form_field">
+              <label class="form_label" for="email">Email:</label>
+              <input
+                class="input"
+                type="email"
+                id="email-input"
+                name="email"
+                required
+                placeholder="Your Email"
+              />
+            </div>
+            <br />
+            <button id="place-order-btn" disabled>Proceed to Checkout</button>
+          </div>
+          <!-- CART CLOSE -->
+          <i class="bx bx-x" id="close-cart"></i>
+        </div>
+      </div>
+    </header>
+    <!-- shop -->
+    <section class="shop container">
+      <h2 class="section-title">Shop Products</h2>
+      <!-- content -->
+      <div class="shop-content">
+        <!-- Box 1 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item1.jpg"
+            alt="Eminem Encore-album"
+            class="product-img"
+          />
+          <h2 class="product-title">Eminem Encore-album</h2>
+          <span class="price">$17.01</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 2 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item2.jpg"
+            alt="Kendrick Lamar To Pimp a Butterfly - album"
+            class="product-img"
+          />
+          <h2 class="product-title">
+            Kendrick Lamar To Pimp a Butterfly - album
+          </h2>
+          <span class="price">$26.99</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 3 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item3.jpg"
+            alt="Kendrick Lamar White DAMN T-shirt"
+            class="product-img"
+          />
+          <h2 class="product-title">Kendrick Lamar White DAMN T-shirt</h2>
+          <span class="price">$40.00</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 4 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item4.jpg"
+            alt="Kendrick Lamar White DAMN Hoodie"
+            class="product-img"
+          />
+          <h2 class="product-title">Kendrick Lamar White DAMN Hoodie</h2>
+          <span class="price">$42.39</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 5 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item5.jpg"
+            alt="Ne-Yo Year of the Gentleman - album"
+            class="product-img"
+          />
+          <h2 class="product-title">Ne-Yo Year of the Gentleman - album</h2>
+          <span class="price">$44.68</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 6 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item6.jpg"
+            alt="The Weeknd Beauty Behind the Madness - album"
+            class="product-img"
+          />
+          <h2 class="product-title">
+            The Weeknd Beauty Behind the Madness - album
+          </h2>
+          <span class="price">$15.98</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 7 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item7.jpg"
+            alt="Beyonce lemonade crop-top"
+            class="product-img"
+          />
+          <h2 class="product-title">Beyonce lemonade crop-top</h2>
+          <span class="price">$40</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 8 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item8.jpg"
+            alt="The Weeknd X Vlone what happens after hours hoodie"
+            class="product-img"
+          />
+          <h2 class="product-title">
+            The Weeknd X Vlone what happens after hours hoodie
+          </h2>
+          <span class="price">$236</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 9 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item9.jpg"
+            alt="Mozart - album"
+            class="product-img"
+          />
+          <h2 class="product-title">Mozart - album</h2>
+          <span class="price">$14.97</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 10 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item10.jpg"
+            alt="Beethoven - album"
+            class="product-img"
+          />
+          <h2 class="product-title">Beethoven - album</h2>
+          <span class="price">$42.99</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 11 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item11.jpg"
+            alt="Mozart Wolfgang T-shirt"
+            class="product-img"
+          />
+          <h2 class="product-title">Mozart Wolfgang T-shirt</h2>
+          <span class="price">$45</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 12 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item12.jpg"
+            alt="Classical music T-shirt"
+            class="product-img"
+          />
+          <h2 class="product-title">Classical music T-shirt</h2>
+          <span class="price">$45</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 13 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item13.jpg"
+            alt="Michael Jackson BAD - album"
+            class="product-img"
+          />
+          <h2 class="product-title">Michael Jackson BAD - album</h2>
+          <span class="price">$19.89</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 14 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item14.jpg"
+            alt="ABBA The Album - album"
+            class="product-img"
+          />
+          <h2 class="product-title">ABBA The Album - album</h2>
+          <span class="price">$73.51</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 15 -->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item15.jpg"
+            alt="ABBA black long sleeve"
+            class="product-img"
+          />
+          <h2 class="product-title">ABBA black long sleeve</h2>
+          <span class="price">$25.30</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- Box 16-->
+        <div class="product-box">
+          <img
+            src="../IMAGES/shop_pics/shop_item16.jpg"
+            alt="Brunno Mars World Tour Crewneck"
+            class="product-img"
+          />
+          <h2 class="product-title">Brunno Mars World Tour Crewneck</h2>
+          <span class="price">$49.37</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+      </div>
+    </section>
+    <br />
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-topic">
+            <h3>Thank you for visiting our page</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Comments</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Quiz</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </div>
+          <div class="footer-topic">
+            <h3>Follow Us</h3>
+            <div class="social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-topic">
+            <h3>Editor Information</h3>
+            <ul>
+              <li><a href="student1PageEditor.html">Page Editor</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../JS/shop.js"></script>
+  </body>
+</html>
