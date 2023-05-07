@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+body{
+  background-color: rgb(44, 45, 49);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  background: #2c2d31;
+}
+
+form {
+  border-radius: 15px;
+  padding: 20px;
+  width: 700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.col {
+  flex: 1 1 250px;
+}
+
+.title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.inputBox {
+  margin: 15px 0;
+}
+
+.inputBox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+input:focus {
+  border: 1px solid #000;
+}
+
+.flex {
+  display: flex;
+  gap: 15px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: #27ae60;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #2ecc71;
+}
+
+.month_option {
+  margin-bottom: 35.5px;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+
+
+
+
+/* student 2 nav bar */
+div.navbar{
+  width: 100%;
+ } 
+
+ .navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background-color: rgb(20, 33, 61);
+ }
+
+ .navbar ul li {
+  list-style: none;
+  float: right;
+ } 
+
+ .navbar ul li a {
+  margin-top: 3px;
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  
+ }
+ 
+ .navbar ul li a:hover   {
+  border-radius: 18px;
+  background-color: gold;
+  color: black;
+  transition: 0.65s all ease;
+  
+ }
+
+
+.nav_logo{
+  width: 35px;
+  aspect-ratio: 1/1;
+  margin-bottom: 4px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+input, select{
+
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+#formpart2{
+  background-color:rgb(255, 254, 254);
+  margin-top: 20px;
+  /* padding: 1rem; */
+  /* border: 1px solid black; */
+  border-radius: 1rem;
+}
+#expiry_inputs{
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 1rem;
+}
+#cvv, #exp_month, #exp_year{
+  width: fit-content;
+}
+#shipping_details_message{
+  height: 5rem;
+  padding: 1rem;
+}
+#shipping_details_message p, #shipping_details_message button{
+  display: inline;
+}
+#shipping_details_message p{
+  float: left;
+}
+#shipping_details_message button{
+  float: right;
+}
+#edit_shipping_info{
+  margin-top: 1rem;
+  clear: both;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4;
+  gap: 1rem;
+}
+.notvisible{
+  display: none !important;
+}
+#edit_shipping_info input, #edit_shipping_info select{
+  float: right;
+}
+.button{
+  background-color: gold;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  width: fit-content;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.order_summary_div div{
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+th{
+  width: 200px;
+  text-align: left;
+  font-weight: normal;
+}
+td{
+  width: 250px;
+  border-bottom: 2px solid rgb(5, 5, 5);
+}
+
+.contain
+{
+  margin: auto;
+  width: 30%;
+}
+
+.title{
+  color: black;
+  font-weight: 700;
+}
+
+
+

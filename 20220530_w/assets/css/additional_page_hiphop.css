@@ -1,0 +1,145 @@
+  @import url(Main_style.css);
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    background-color: #2c2d31;
+    scroll-behavior: smooth;
+    transition: 0.65s all ease;
+  }
+
+  .header {
+    background-image: url("/assets/img/party.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 5px 8px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .iteams {
+    margin: auto;
+    max-width: 99.5%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 3px black;
+  }
+
+  .content-iteams {
+    background-color: #f1f1f1;
+    padding: 50px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+    min-height: 300px;
+    background-color:  rgb(44, 45, 49);
+    color: #fff;
+  }
+
+  .parallax {
+    background-image: url("/assets/img/party.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .footer {
+    background-color: #14213d;
+    color: white;
+    padding: 20px;
+    font-size: 0.8em;
+  }
+
+  h3 {
+    color: #d3af42;
+  }
+
+  .image {
+    margin-top: 25px;
+    background-image: url("../Images/1.jpg");
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #back-to-top-btn {
+    position: relative;
+    bottom: 5px;
+    z-index: 99;
+    font-size: 12px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
+
+  #back-to-top-btn:hover {
+    background-color: #555;
+  }
+
+  /* second navigationbar css */
+
+  #navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #14213d;
+    box-shadow: 0 0 8px 3px black;
+  }
+
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 5px;
+    text-align: center;
+  }
+
+  #navbar a:hover {
+    border-radius: 18px;
+    background-color: gold;
+    color: black;
+    transition: 0.65s all ease;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky+.content {
+    padding-top: 60px;
+  } 
