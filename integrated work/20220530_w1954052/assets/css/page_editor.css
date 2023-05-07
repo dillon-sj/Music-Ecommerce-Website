@@ -1,12 +1,26 @@
-@import url('Main_style.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-
-*{
+* {
     font-family: 'Poppins', sans-serif;
-  
+    scroll-behavior: smooth;
 }
 
-header{
+html{
+  animation: transitionIn 1.5s;
+}
+
+@keyframes transitionIn{
+  from{
+      opacity: 0;
+      transform: rotateX(-10deg);
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+header {
     background-color: rgb(211, 175, 66);
     display: flex;
     justify-content: center;
@@ -18,6 +32,7 @@ header{
     display: flex;
     justify-content: center;
     text-align: center;
+    background-color: #D3AF42;
     color:  white;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -32,9 +47,11 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(145, 143, 143);
+    background-color: rgb(229, 229, 229);
     gap: 10px;
     border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .content p{

@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
 		if (op <= 0.01) {
 		  clearInterval(timer);
 		  // sessionStorage.setItem("visited", "false");
-		  window.location.href = "../HTML/shop.html";
+		  window.location.href ="../../../20221420-w1956394/Home_page.html";
 		}
 		element.style.opacity = op;
 		op -= op * 0.05;

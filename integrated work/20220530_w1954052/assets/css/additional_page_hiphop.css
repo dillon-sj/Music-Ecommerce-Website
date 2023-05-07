@@ -11,7 +11,7 @@
   }
 
   .header {
-    background-image: url("/assets/img/party.jpg");
+    background-image: url("../img/party.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
   }
 
   .parallax {
-    background-image: url("/assets/img/party.jpg");
+    background-image: url("../img/party.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@
 
   .image {
     margin-top: 25px;
-    background-image: url("../Images/1.jpg");
+    background-image: url("../img/party.jpg");
     width: 300px;
     height: 250px;
     float: left;
