@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins' , sans-serif;
+  background-color: #2c2d31;
+}
+
+
+.header {
+  background-image: url('r&b1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 5px 8px 5px rgba(0,0,0,0.5);
+}
+
+.page_nav {
+  padding-left: 50px;
+}
+
+.page_nav a {
+  list-style: none;
+  float: left;
+  /* margin-top: 3px; */
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3 s;
+  white-space: nowrap;
+  line-height: 1;
+  
+ }
+
+.iteams {
+  margin: auto;
+  max-width: 99%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px 3px black;
+}
+
+.content {
+  background-color: #f1f1f1;
+  padding: 50px;
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: justify;
+  min-height: 260px;
+  background-color: #14213D;
+  color: #fff;
+}
+
+.parallax {
+  background-image: url('r&b1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  filter: contrast(35%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.footer1 {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+h3  {
+  color: #D3AF42;
+}
+
+.image1 {
+  margin-top: 25px;
+  background-image: url('Ray-Charles.jpg');
+  width: 300px;
+  height: 250px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.image2 {
+  margin-top: 25px;
+  background-image: url('stevie-wonder.jpg');
+  width: 300px;
+  height: 250px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.image3 {
+  margin-top: 25px;
+  background-image: url('randb.jpg');
+  width: 300px;
+  height: 250px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+
+
+#back-to-top-btn {
+  position: relative;
+  bottom: 5px;
+  z-index: 99;
+  font-size: 12px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  text-decoration: none ;
+}
+
+#back-to-top-btn:hover {
+  background-color: #555;
+}
+
