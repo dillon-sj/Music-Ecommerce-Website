@@ -1,0 +1,241 @@
+@import url('Main_style.css');
+
+:root{
+    --background-color: rgb(44, 45, 49);
+    --card-color: rgb(76, 78, 85);
+}
+
+[data-theme="purple"]{
+    --background-color: purple;
+    --card-color: rgb(171, 0, 171);
+}
+
+[data-theme="green"]{
+    --background-color: green;
+    --card-color: rgb(0, 169, 0);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+}
+    
+header {
+  position: relative;
+  background-color: #333;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navMenu {
+  padding-top: 16px;
+  position: absolute;
+  right: 2%;
+}
+
+
+
+.header {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.header img{
+    height: 60px;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.student-title{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.controls{
+    display: flex;
+    gap: 20px;
+}
+
+.font-size{
+    display: flex;
+    align-items: end;
+    height: fit-content;
+}
+
+.font-size h3{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.font-size h2{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.font-size h1{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.color-theme-selector{
+    display: flex;
+    height: fit-content;
+    padding: 2px;
+    gap: 1px;
+    flex-direction: column;
+    background-color: black;
+    
+}
+
+.color-theme{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+}
+
+.albums-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 5rem;
+    color: white;
+}
+
+.albums{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.album-info{
+    display: flex;
+    width: 90%;
+    height: 600px;
+    padding: 10px;
+    border: 8px solid rgb(211, 175, 66);
+    margin: 40px 0;
+    gap:30px;
+    background-color: var(--card-color);
+}
+
+.info-section{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section p{
+    font-size: 2rem;
+}
+
+.preview-img{
+    flex: 1;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 40px;
+}
+
+.fontsizechange{
+    color: white;
+}
+
+.pagedev{
+    font-size: x-large;
+    margin-top: 0px;
+    float: right;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    color: white;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.albumdescription{
+    color: white;
+}
+
+.container {
+    position: relative;
+    height: 280px;
+    aspect-ratio: 1/1;
+  }
+  
+  .image {
+    display: block;
+    height: 280px;
+    aspect-ratio: 1/1;  
+    border-radius: 10px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 280px;
+    aspect-ratio: 1/1;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: grey;
+    border-radius: 10px;    
+  }
+  
+  .container:hover .overlay {
+    opacity: 0.88;
+  }
+  
+  .text {
+    color: gold;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+

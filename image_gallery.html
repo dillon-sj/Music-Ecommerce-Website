@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="assets/img/cd16px.svg">
+    <link rel="stylesheet" href="assets/css/image_gallery.css">
+    <script defer src="assets/js/image_gallery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/img/cd16px.svg" class="navlogo" alt="sitelogo">
+        </div>
+        <div class="navbar-iteams">
+          <a href="#Aboutus">About us</a>
+          <a href="sitemap.html">Sitemap</a>
+          <a href="#Quiz">Quiz</a>
+          <a href="#shop">Shop</a>
+          <a href="#Comments">Comments</a>
+          <a href="#Home">Home</a>
+        </div>
+    </header>
+    <div class="header">
+        <h1 class="student-title">Student 4</h1>
+        <img src="/assets/img/grammy.png" alt="Logo">
+        <div class="controls">
+            <div class="font-size">
+                <h3 class="fontsizechange" onclick="changeFont('small')">A</h3>
+                <h2 class="fontsizechange" onclick="changeFont('medium')">A</h2>
+                <h1 class="fontsizechange" onclick="changeFont('large')">A</h1>
+            </div>
+            <div class="color-theme-selector">
+                <div class="color-theme" onclick="changeTheme('blue')"></div>
+                <div class="color-theme" onclick="changeTheme('purple')"></div>
+                <div class="color-theme" onclick="changeTheme('green')"></div>
+                <div class="color-theme" onclick="changeThemeRandom()"></div>
+            </div>
+        </div>
+    </div>
+    <section class="albums-section">
+        <div class="title">
+            <h2>Grammy Winnings of the year</h2>
+            <h2>2022-2023</h2>
+        </div>
+        <div class="albums">
+            <div class="container" id="albumArt1">
+                <img src="assets/img/albumart1.webp" alt="random img" class="image">
+                <div class="overlay">
+                    <div class="text">"Record of the year"</div>
+                </div>
+            </div>
+            <div class="container" id="albumArt2">
+                <img src="assets/img/albumart2.webp" alt="random img" class="image">
+                <div class="overlay">
+                    <div class="text">"Album of the year"</div>
+                </div>
+            </div>
+            <div class="container" id="albumArt3">
+                <img src="assets/img/albumart3.webp" alt="random img" class="image">
+                <div class="overlay">
+                    <div class="text">"Song of the Year"</div>
+                </div>
+            </div>
+            <div class="container" id="albumArt4">
+                <img src="assets/img/albumart4.webp" alt="random img" class="image">
+                <div class="overlay">
+                    <div class="text">"Best progressive R&B Album "</div>
+                </div>
+            </div>
+            <div class="container" id="albumArt5">
+                <img src="assets/img/albumart5.webp" alt="random img" class="image">
+                <div class="overlay">
+                    <div class="text">"Best Dance Album"</div>
+                </div>
+            </div>
+        </div>
+        <div class="album-info">
+            <img src="/Images/best-rap-album-covers-7.jpg.webp" alt="" class="preview-img" id="albumInfoPic">
+            <div class="info-section">
+                 <p class="albumdescription" id="albumDesc"></p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-topic">
+                    <h3>Thank you for visiting our page</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Comments</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-topic"> 
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-topic">
+                    <h3>Editor Information</h3>
+                    <ul>
+                        <li><a href="page_editor.html">Page Editor</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
