@@ -11,7 +11,7 @@
   }
 
   .header {
-    background-image: url("../IMAGES/blog_pics/concertv2.avif");
+    background-image: url("../IMAGES/blog_pics/concertv2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
   }
 
   .parallax {
-    background-image: url("../IMAGES/blog_pics/concertv2.avif");
+    background-image: url("../IMAGES/blog_pics/concertv2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
